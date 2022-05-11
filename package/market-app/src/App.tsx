@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { select } from 'd3'
 import styled from '@emotion/styled'
+import { Foo } from '@monorepo/shared'
 
 const DivStyle = styled.div`
  background-color: hotpink;
@@ -35,6 +36,7 @@ function App() {
    <svg ref={svgRef} />
    <DivStyle>Hover to change color.</DivStyle>
    <div className="text-red-600">red</div>
+   <Foo />
   </div>
  )
 }

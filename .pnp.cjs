@@ -23,11 +23,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "market-app",\
         "reference": "workspace:package/market-app"\
+      },\
+      {\
+        "name": "@monorepo/shared",\
+        "reference": "workspace:package/shared"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@monorepo/shared", ["workspace:package/shared"]],\
       ["lmw-market-workspace", ["workspace:."]],\
       ["market-app", ["workspace:package/market-app"]]\
     ],\
@@ -807,6 +812,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jridgewell/sourcemap-codec", "npm:1.4.13"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@monorepo/shared", [\
+        ["workspace:package/shared", {\
+          "packageLocation": "./package/shared/",\
+          "packageDependencies": [\
+            ["@monorepo/shared", "workspace:package/shared"],\
+            ["@types/react", "npm:18.0.9"],\
+            ["@types/react-dom", "npm:18.0.3"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:9770afc9b283ec80b4022587c3685d78887ed14452fdbf7aff96f20cbd071631c318b770b893cf343b5118584088f70a14f2df52a07a6837037f7baf6e4937ac#npm:18.1.0"],\
+            ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=bda367"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@nodelib/fs.scandir", [\
@@ -4509,6 +4528,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/css", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:11.9.0"],\
             ["@emotion/react", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:11.9.0"],\
             ["@emotion/styled", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:11.8.1"],\
+            ["@monorepo/shared", "workspace:package/shared"],\
             ["@types/d3", "npm:7.1.0"],\
             ["@types/react", "npm:18.0.9"],\
             ["@types/react-dom", "npm:18.0.3"],\
@@ -4517,7 +4537,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["d3", "npm:7.4.4"],\
             ["postcss", "npm:8.4.13"],\
             ["react", "npm:18.1.0"],\
-            ["react-dom", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:18.1.0"],\
+            ["react-dom", "virtual:9770afc9b283ec80b4022587c3685d78887ed14452fdbf7aff96f20cbd071631c318b770b893cf343b5118584088f70a14f2df52a07a6837037f7baf6e4937ac#npm:18.1.0"],\
             ["tailwindcss", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:3.0.24"],\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=bda367"],\
             ["vite", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:2.9.8"]\
@@ -5244,10 +5264,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:18.1.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-e4c42cda79/0/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",\
+        ["virtual:9770afc9b283ec80b4022587c3685d78887ed14452fdbf7aff96f20cbd071631c318b770b893cf343b5118584088f70a14f2df52a07a6837037f7baf6e4937ac#npm:18.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-0188603fde/0/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",\
           "packageDependencies": [\
-            ["react-dom", "virtual:d16054c3fa81a162fc4a0d17fc3e1d39b58f10d3fa9aa82153ac0573ba370d56a637be1de016960f8b7e42579e8a286dbcf698935a9cd87befa713546083b95a#npm:18.1.0"],\
+            ["react-dom", "virtual:9770afc9b283ec80b4022587c3685d78887ed14452fdbf7aff96f20cbd071631c318b770b893cf343b5118584088f70a14f2df52a07a6837037f7baf6e4937ac#npm:18.1.0"],\
             ["@types/react", "npm:18.0.9"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.1.0"],\
