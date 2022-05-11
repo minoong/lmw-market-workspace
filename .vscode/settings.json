@@ -1,4 +1,14 @@
 {
+  "editor.formatOnSave": false,
+  "[typescript]": {
+   "editor.formatOnSave": true
+  },
+  "[javascript]": {
+   "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+   "source.fixAll.eslint": true
+  },
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
