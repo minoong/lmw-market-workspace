@@ -1,17 +1,18 @@
 {
-    "extends": "../../tsconfig.base.json",
-    // "compilerOptions": {
-    //     "allowJs": true,
-    //     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    //     "jsx": "react",
-    //     "target": "ESNext",
-    //     "module": "ESNext",
-    //     "declaration": true,
-    //     "declarationMap": true,
-    //     "outDir": "./build",
-    //     "strict": true,
-    //     "esModuleInterop": true,
-    //     "moduleResolution": "Node",
-    //   },
+    // "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "allowJs": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "jsx": "react",
+        "target": "ESNext",
+        "module": "ESNext",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap":true,
+        "outDir": "./build",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+      },
     "include": ["./src"]
-  }
+}
