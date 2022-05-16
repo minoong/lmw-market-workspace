@@ -1,6 +1,6 @@
+import Header from '@components/common/layout/Header'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Header from './components/common/layout/Header'
 
 function App() {
  return (

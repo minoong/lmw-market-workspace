@@ -3,7 +3,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRss } from '@fortawesome/free-solid-svg-icons'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import logo from '../../../logo.svg'
 
 const styles = {
@@ -26,7 +26,7 @@ function Header() {
  return (
   <div className={styles.header}>
    <div onClick={onClickHome} role="button" className="w-[200px] h-[200px]">
-    df
+    df!
     <img src={logo} alt="logo" className="object-cover" width={200} height={200} />
    </div>
 
