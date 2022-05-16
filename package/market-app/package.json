@@ -15,9 +15,11 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@monorepo/shared": "*",
+    "@types/react-router-dom": "^5.3.3",
     "d3": "^7.4.4",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.9.2",

@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRss } from '@fortawesome/free-solid-svg-icons'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../../logo.svg'
 
 const styles = {
@@ -16,9 +19,16 @@ const styles = {
 }
 
 function Header() {
+ const navigate = useNavigate()
+
+ const onClickHome = () => navigate('teams')
+
  return (
   <div className={styles.header}>
-   <img src={logo} alt="logo" width={200} height={200} />
+   <div onClick={onClickHome} role="button" className="w-[200px] h-[200px]">
+    df
+    <img src={logo} alt="logo" className="object-cover" width={200} height={200} />
+   </div>
 
    <div className={styles.headerWrapper}>
     <nav className={styles.nav}>
